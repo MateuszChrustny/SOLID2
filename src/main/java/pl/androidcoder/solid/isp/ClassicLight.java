@@ -31,4 +31,11 @@ public class ClassicLight implements Light {
             this.dim = dim;
         }
     }
+
+    @Override
+    public float getDim() {
+        return dim;
+    }
+
+
 }

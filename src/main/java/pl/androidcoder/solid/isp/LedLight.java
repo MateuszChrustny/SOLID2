@@ -31,4 +31,9 @@ public class LedLight implements Light {
             this.dim = dim;
         }
     }
+
+    @Override
+    public float getDim() {
+        return dim;
+    }
 }

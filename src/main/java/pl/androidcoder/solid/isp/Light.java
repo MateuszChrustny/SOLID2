@@ -8,4 +8,6 @@ public interface Light {
     boolean isOn();
 
     void setDim(float dim);
+
+    float getDim();
 }

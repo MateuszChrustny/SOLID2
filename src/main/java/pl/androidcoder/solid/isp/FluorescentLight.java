@@ -23,4 +23,9 @@ public class FluorescentLight implements Light{
     public void setDim(float dim) {
         throw new IllegalStateException();
     }
+
+    @Override
+    public float getDim() {
+        throw new IllegalStateException();
+    }
 }
