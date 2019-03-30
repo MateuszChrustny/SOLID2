@@ -1,4 +1,4 @@
-package pl.android.solid.lsp.first;
+package pl.androidcoder.solid.lsp.second;
 
 public class AirConditioner {
 
