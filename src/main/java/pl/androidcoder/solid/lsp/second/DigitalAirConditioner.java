@@ -35,9 +35,4 @@ public class DigitalAirConditioner {
     {
         return this.temperature;
     }
-
-    public AirConditioner asAirConditioner()
-    {
-        return new DigitalAirConditionerAdapter(this);
-    }
 }
