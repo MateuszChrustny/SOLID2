@@ -1,6 +1,6 @@
-package pl.androidcoder.solid.lsp.second;
+package pl.androidcoder.solid.lsp.airconditioners.second;
 
-import pl.androidcoder.solid.lsp.first.AirConditioner;
+import pl.androidcoder.solid.lsp.airconditioners.first.AirConditioner;
 
 import java.util.List;
 

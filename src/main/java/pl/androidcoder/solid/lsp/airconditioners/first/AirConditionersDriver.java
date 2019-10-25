@@ -1,4 +1,4 @@
-package pl.androidcoder.solid.lsp.first;
+package pl.androidcoder.solid.lsp.airconditioners.first;
 
 import java.util.List;
 

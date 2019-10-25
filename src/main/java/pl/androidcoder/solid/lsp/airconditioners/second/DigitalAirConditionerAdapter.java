@@ -1,27 +1,25 @@
-package pl.androidcoder.solid.lsp.first;
+package pl.androidcoder.solid.lsp.airconditioners.second;
 
-public class DigitalAirConditioner extends AirConditioner {
+import static pl.androidcoder.solid.lsp.airconditioners.second.DigitalAirConditioner.MAX_TEMP;
+import static pl.androidcoder.solid.lsp.airconditioners.second.DigitalAirConditioner.MIN_TEMP;
 
-    public static final float MAX_TEMP = 26;
-    public static final float MIN_TEMP = 15;
+public class DigitalAirConditionerAdapter extends AirConditioner {
 
-    private float temperature;
+    private DigitalAirConditioner airConditioner;
+
+    public DigitalAirConditionerAdapter(DigitalAirConditioner airConditioner) {
+        this.airConditioner = airConditioner;
+    }
 
     @Override
     public void setLevel(int level) {
         super.setLevel(level);
-        temperature = calculateTemperatureFromLevel();
+        airConditioner.setTemperature(calculateTemperatureFromLevel());
     }
 
-    public void setTemperature(float temperature) {
-        if (temperature > MAX_TEMP) {
-            this.temperature = MAX_TEMP;
-        } else if (temperature < MIN_TEMP) {
-            this.temperature = MIN_TEMP;
-        } else {
-            this.temperature = temperature;
-        }
-        setLevel(calculateLevelFromTemperature());
+    @Override
+    public int getCurrentLevel() {
+        return calculateLevelFromTemperature();
     }
 
     private float calculateTemperatureFromLevel() {
@@ -43,7 +41,7 @@ public class DigitalAirConditioner extends AirConditioner {
     }
 
     private float temperatureToPercent() {
-        float relativeTemp = temperature - MIN_TEMP;
+        float relativeTemp = airConditioner.getCurrentTemperature() - MIN_TEMP;
         float range = MAX_TEMP - MIN_TEMP;
         return relativeTemp / range;
     }

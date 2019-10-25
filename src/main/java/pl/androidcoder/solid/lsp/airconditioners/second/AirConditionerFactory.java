@@ -1,4 +1,4 @@
-package pl.androidcoder.solid.lsp.second;
+package pl.androidcoder.solid.lsp.airconditioners.second;
 
 public class AirConditionerFactory {
     public AirConditioner createAirConditioner(DigitalAirConditioner digitalAirConditioner){

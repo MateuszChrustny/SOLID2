@@ -1,4 +1,4 @@
-package pl.androidcoder.solid.lsp.solve.collectionkotlin
+package pl.androidcoder.solid.lsp.collectionkotlin.solve
 
 import pl.androidcoder.solid.lsp.collection.Storage
 import pl.androidcoder.solid.lsp.collectionkotlin.LimitExceededException

@@ -1,4 +1,4 @@
-package pl.androidcoder.solid.lsp.solve.collection;
+package pl.androidcoder.solid.lsp.collection.solve;
 
 import pl.androidcoder.solid.lsp.collection.Storage;
 
